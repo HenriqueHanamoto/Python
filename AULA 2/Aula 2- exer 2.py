@@ -1,0 +1,14 @@
+# Exercicio 2 - Loop For
+# Crie um programa que peça ao usuario alguns items de compra em seguida exiba a lista
+
+n_items = int(input("Quantos itens você deseja inserir na lista de compras? "))
+Compras: list=[]
+
+
+for i in range(0,n_items):
+    item = input("Digite o nome do item: ")
+    Compras.append(item)
+
+print("Lista de compras:")
+for i, item in enumerate(Compras):
+    print(i,item)
